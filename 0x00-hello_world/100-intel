@@ -1,0 +1,2 @@
+#!/bin/bash
+export CFILE=7-main.c; gcc -S $CFILE
