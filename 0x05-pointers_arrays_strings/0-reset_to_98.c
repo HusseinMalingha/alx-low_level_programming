@@ -6,7 +6,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+int main()
 {
 	/* declaratio of n an integer whose value will be changed */
 	int n;
