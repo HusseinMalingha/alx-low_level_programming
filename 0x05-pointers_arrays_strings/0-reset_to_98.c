@@ -10,8 +10,10 @@ void reset_to_98(int *n);
  */
 int main(void)
 {
+	/* declaratio of n an integer whose value will be changed */
 	int n;
 
+	/* n is initialized with 402 */
 	n = 402;
 	printf("n=%d\n", n);
 	reset_to_98(&n);
@@ -24,7 +26,7 @@ int main(void)
  *
  * inputs: int *n
  *
- * Return: *n
+ * Return: None
  */
 void reset_to_98(int *n)
 {
