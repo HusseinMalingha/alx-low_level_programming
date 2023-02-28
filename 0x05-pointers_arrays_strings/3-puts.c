@@ -3,13 +3,13 @@
 
 /**
  * _puts - Prints out string to the console with trailing new line
- * @s: string to be printed
+ * @str: string to be printed
  *
  * Return: None
  */
 void _puts(char *str)
 {
-	while(*str != '\0')
+	while (*str != '\0')
 	{
 		_putchar(*str);
 		str++;
