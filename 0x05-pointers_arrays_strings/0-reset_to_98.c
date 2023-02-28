@@ -1,7 +1,5 @@
+#include "main.h"
 #include <stdio.h>
-
-/* function declaration */
-void reset_to_98(int *n);
 
 /**
  * main - entry point
