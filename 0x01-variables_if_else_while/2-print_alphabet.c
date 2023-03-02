@@ -2,7 +2,6 @@
 
 /**
  * main - print the alphabet
- * @alphabet: string for the alphabet
  *
  * Return: Always 0 (Success)
  */
@@ -11,7 +10,7 @@ int main(void)
 	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
 	int i = 0;
 
-	while(alphabet[i] != '\0')
+	while (alphabet[i] != '\0')
 	{
 		putchar(alphabet[i]);
 		i++;
