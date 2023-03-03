@@ -2,20 +2,19 @@
 #include <ctype.h>
 
 /**
- * main - prints the alphabet in both lower and upper cases
+ *  main - prints the alphabet in both lower and upper cases
  *
  * Return: 0 (Success)
  */
 int main(void)
 {
-        char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXWYZ";
-        int i = 0;
-
-        while(alphabet[i] != '\0')
-        {
-                putchar(alphabet[i]);
-                i++;
-        }
-        putchar('\n');
-        return (0);
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXWYZ";
+	int i = 0;
+	while(i < 52)
+	{
+		putchar(alphabet[i]);
+		i++;
+	}
+	putchar('\n');
+	return (0);
 }
