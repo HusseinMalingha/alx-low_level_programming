@@ -11,7 +11,8 @@ int main(void)
 
 	for (single_dig = 0; single_dig < 10; single_dig++)
 	{
-		printf("%d\n", single_dig);
+		printf("%d", single_dig);
 	}
+	putchar('\n');
 	return (0);
 }
