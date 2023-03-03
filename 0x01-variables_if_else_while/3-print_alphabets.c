@@ -8,9 +8,9 @@
  */
 int main(void)
 {
-	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXWYZ";
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int i = 0;
-	while(i < 52)
+	while (i < 52)
 	{
 		putchar(alphabet[i]);
 		i++;
