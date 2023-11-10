@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "3-calc.h"
+#include "function_pointers.h"
 
 int _strcmp(const char *s1, const char *s2);
 
@@ -14,6 +15,7 @@ int _strcmp(const char *s1, const char *s2);
 int main(int argc, char **argv)
 {
 	int num1, num2, result;
+	char *op;
 
 	if (argc != 4)
 	{
@@ -22,9 +24,16 @@ int main(int argc, char **argv)
 	}
 
 	num1 = atoi(argv[1]);
+	op = argv[2];
 	num2 = atoi(argv[3]);
 
-	if ((_strcmp(argv[2], "/") == 0 || _strcmp(argv[2], "%") == 0) && num2 == 0)
+	if (!(_strcmp(op, "+") == 0 || _strcmp(op, "-") == 0 || _strcmp(op, "*") == 0 || _strcmp(op, "/") == 0 || _strcmp(op, "%") == 0))
+	{
+		printf("Error\n");
+		return (99);
+	}
+
+	if ((_strcmp(op, "/") == 0 || _strcmp(op, "%") == 0) && num2 == 0)
 	{
 		printf("Error\n");
 		return (100);
