@@ -19,9 +19,6 @@ void print_all(const char * const format, ...)
 	{
 		c = format[i];
 		
-		if (i != 0)
-			printf(", ");
-
 		switch (c)
 		{
 			case 'c':
@@ -41,9 +38,9 @@ void print_all(const char * const format, ...)
 					printf("%s", sep);
 				break;
 			default:
-				i++;
-				continue;
+				break;
 		}
+		printf(", ");
 		i++;
 	}
 
