@@ -1,7 +1,10 @@
-.PHONY: all
+.PHONY: all school
+.DEFAULT_GOAL: all
 
 CC = gcc
 SRC := $(wildcard *.c)
 
-all:
-	${CC} ${SRC} -o school
+all: school
+
+school:
+	${CC} ${SRC} -o $@
